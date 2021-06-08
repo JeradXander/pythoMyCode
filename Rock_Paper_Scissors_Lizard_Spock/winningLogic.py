@@ -2,8 +2,11 @@
 
 #winningLogic 
 def result(user,comp):
-    if user == 0:
 
+    #conditional for user move
+    #rock
+    if user == 0:
+        #condiotional for comp moves
         if comp == 0:
             return "draw"
 
@@ -19,7 +22,7 @@ def result(user,comp):
         elif comp == 2:
             print("Rock crushes Scissors")
             return "win"
-
+    #paper
     elif user == 1:
         
         if comp == 1:
@@ -37,7 +40,7 @@ def result(user,comp):
         elif comp == 4:
             print("Paper disproves Spock")
             return "win"
-
+    #scissors
     elif user == 2:
 
         if comp == 2:
@@ -54,6 +57,8 @@ def result(user,comp):
         elif comp == 3:
             print("Scissors decapitates Lizard")
             return "win"
+
+    #lizard    
     elif user == 3:
 
         if comp == 0:
@@ -70,6 +75,7 @@ def result(user,comp):
         elif comp == 4:
             print("Lizard poisons Spock")
             return "win"
+    #spock
     elif user == 4:
         if comp == 0:
             print("Spock vaporizes Rock")
