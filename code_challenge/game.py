@@ -32,12 +32,12 @@ def getadventur_stats(variable):
 def intro():
     #print a main menu and the commands
     
+    # get player info
     player1.name = getadventur_stats("name")
-    
     player1.ability  = getadventur_stats("ability")
     
   
-
+    #print out intro
     print(f'''\n\n
 RPG Game
 ========
